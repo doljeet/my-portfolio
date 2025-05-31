@@ -6,6 +6,12 @@ import { FiSmartphone, FiCode, FiTool, FiBox, FiCpu, FiZap, FiMonitor } from "re
 import { SiPython, SiArduino } from "react-icons/si";
 import MobileMenu from '@/components/MobileMenu'
 import AnimatedSkillBar from '@/components/AnimatedSkillBar'
+import ExperienceEducation from '@/components/ExperienceEducation';
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+}
 
 export default function Portfolio() {
   return (
@@ -20,6 +26,7 @@ export default function Portfolio() {
             <li><a href="#about" className="hover:text-blue-400 transition duration-300">O mnie</a></li>
             <li><a href="#projects" className="hover:text-blue-400 transition duration-300">Projekty</a></li>
             <li><a href="#skills" className="hover:text-blue-400 transition duration-300">Umiejętności</a></li>
+            <li><a href="#education" className="hover:text-blue-400 transition duration-300">Doświadczenie i edukacja</a></li>
             <li><a href="#contact" className="hover:text-blue-400 transition duration-300">Kontakt</a></li>
           </ul>
           
@@ -81,7 +88,7 @@ export default function Portfolio() {
       </section>
 
 {/* About Section */}
-<section id="about" className="mt-24 px-4 max-w-4xl mx-auto">
+<section id="about" className="mt-24 px-4 max-w-6xl mx-auto">
   <div className="bg-gray-900 border border-gray-700 rounded-2xl p-8 shadow-xl">
     <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
       O mnie
@@ -112,6 +119,10 @@ export default function Portfolio() {
           ))}
         </div>
       </section>
+<section id="education">
+  <ExperienceEducation />
+</section>
+
 
 {/* Skills Section */}
 <section id="skills" className="mt-24 px-4 max-w-6xl mx-auto">
