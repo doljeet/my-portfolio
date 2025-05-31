@@ -47,6 +47,13 @@ export default function MobileMenu() {
                 Umiejętności
               </a>
               <a 
+                href="#education" 
+                className="text-white hover:text-blue-400 transition px-4 py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Doświadczenie i Edukacja
+              </a>
+              <a 
                 href="#contact" 
                 className="text-white hover:text-blue-400 transition px-4 py-2"
                 onClick={() => setIsOpen(false)}
