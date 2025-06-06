@@ -3,12 +3,17 @@ import { motion } from 'framer-motion'
 import { CheckCircle, Github, Link2, ArrowLeft } from 'lucide-react'
 import { projects } from '@/data/projects'
 import * as LucideIcons from 'lucide-react'
+import { useEffect } from 'react'
 
 export default function ProjectDetails() {
   const { slug } = useParams()
   const navigate = useNavigate()
   
   const project = projects.find(p => p.slug === slug)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [slug])
 
   if (!project) {
     return (
@@ -63,7 +68,7 @@ export default function ProjectDetails() {
           <motion.img
             key={i}
             src={img}
-            alt={`Zrzut ekranu ${i + 1}`}
+            alt={`Miniatura ${i + 1}`}
             className="rounded-2xl shadow-lg border border-gray-700 object-cover w-full h-60 md:h-80"
             variants={{
               hidden: { opacity: 0, scale: 0.9 },
@@ -78,7 +83,7 @@ export default function ProjectDetails() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h2 className="text-2xl font-semibold text-purple-400 mb-6">Wykorzystane technologie</h2>
+        <h2 className="text-2xl font-semibold text-purple-400 mb-6">Wykorzystane umiejętności</h2>
         <ul className="space-y-3 max-w-sm">
           {project.skills.map((skill, i) => (
             <li

@@ -10,7 +10,7 @@ export default function ProjectCard({ project, index }) {
       transition={{ delay: index * 0.09 }}
       className="bg-gray-900 rounded-2xl shadow-md hover:shadow-xl border border-gray-700"
     >
-      <div className="h-40 bg-gray-800 flex items-center justify-center overflow-hidden rounded-t-2xl"> {/* Dodane rounded-t-2xl */}
+      <div className="h-40 bg-gray-800 flex items-center justify-center overflow-hidden rounded-t-2xl"> 
         {project.images && project.images.length > 0 && (
           <img 
             src={project.images[0]} 
