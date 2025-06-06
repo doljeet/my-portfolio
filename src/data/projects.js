@@ -1,15 +1,15 @@
 export const projects = [
   {
     id: 1,
-    slug: "e-commerce-app",
-    title: "Aplikacja E-Commerce",
-    shortDescription: "Pełnoprawny sklep internetowy z koszykiem i płatnościami",
-    longDescription: "Aplikacja e-commerce z pełną funkcjonalnością sklepu internetowego, włączając w to koszyk zakupów, system płatności online, panel administracyjny i system recenzji produktów. Zaimplementowano zabezpieczenia przed atakami XSS i CSRF.",
-    images: ["/images/1.png"],
-    skills: ["React", "Node.js", "MongoDB", "Stripe API"],
+    slug: "mini-server",
+    title: "Mini Server",
+    shortDescription: "Mini-serwer domowy zbudowany w duchu zero waste, energooszczędny i niskokosztowy",
+    longDescription: "Projekt mini-serwera domowego zbudowanego na bazie płyty głównej ze starego laptopa Fujitsu Lifebook AH531, kieszeni na cztery dyski twarde 3,5 cala oraz samodzielnie zaprojektowanej i wydrukowanej w 3D obudowy. Serwer pełni funkcję prywatnego NAS-a do przechowywania i współdzielenia plików w sieci lokalnej, a także hostuje własne usługi, takie jak Home Assistant do automatyzacji domu oraz Nextcloud jako prywatną chmurę plików i kalendarza. Całość została zaprojektowana w duchu zero waste z wykorzystaniem odzyskanych podzespołów, zoptymalizowana pod kątem energooszczędności, niskiego kosztu budowy i podstawowego bezpieczeństwa sieciowego. To funkcjonalne, ekologiczne i elastyczne rozwiązanie dla pasjonatów technologii open-source i smart home.",
+    images: ["/images/mini-server/mini-server (7) small.jpg", "/images/mini-server/mini-server (6) small.jpg", "/images/mini-server/mini-server (5) small.jpg", "/images/mini-server/mini-server (4) small.jpg", "/images/mini-server/mini-server (3) small.jpg", "/images/mini-server/mini-server (2) small.jpg", "/images/mini-server/mini-server (1) small.jpg"],
+    skills: ["Modelowanie 3D", "Elektronika", "HomeLab", "Lutowanie"],
     links: [
-      { href: "https://github.com/example/e-commerce", label: "GitHub", icon: "Github" },
-      { href: "https://ecommerce-demo.example.com", label: "Live Demo", icon: "Link2" }
+      // { href: "https://github.com/example/e-commerce", label: "GitHub", icon: "Github" },
+      // { href: "https://ecommerce-demo.example.com", label: "Live Demo", icon: "Link2" }
     ]
   },
   {
